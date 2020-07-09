@@ -27,6 +27,14 @@ http
         response.end();
         break;
 
+      case "/api/test2":
+        response.writeHead(200, {
+          "Content-Type": "application/json",
+        });
+        response.write(JSON.stringify({ foo: "bar" }));
+        response.end();
+        break;
+
       default:
         response.writeHead(404, {
           "Content-Type": "text/html",
