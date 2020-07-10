@@ -32,6 +32,7 @@ http
         response.writeHead(200, {
           "Content-Type": "application/json",
         });
+        console.log("2nd API");
         response.write(JSON.stringify({ foo: "bar" }));
         response.end();
         break;
