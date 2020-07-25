@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-git-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniAkash/nodejs-git-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniAkash/nodejs-git-project/issues"
+  },
+  "homepage": "https://github.com/DaniAkash/nodejs-git-project#readme",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}

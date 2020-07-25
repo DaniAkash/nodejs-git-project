@@ -1,4 +1,5 @@
 const http = require("http");
+const _ = require("lodash");
 
 http
   .createServer((req, res) => {
@@ -23,6 +24,24 @@ http
         response.writeHead(200, {
           "Content-Type": "application/json",
         });
+        response.write(JSON.stringify({ foo: "bar" }));
+        response.end();
+        break;
+
+      case "/api/test2":
+        response.writeHead(200, {
+          "Content-Type": "application/json",
+        });
+        console.log("2nd API");
+        response.write(JSON.stringify({ foo: "bar" }));
+        response.end();
+        break;
+
+      case "/api/test3":
+        response.writeHead(200, {
+          "Content-Type": "application/json",
+        });
+        console.log("2nd API");
         response.write(JSON.stringify({ foo: "bar" }));
         response.end();
         break;
