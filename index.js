@@ -37,6 +37,15 @@ http
         response.end();
         break;
 
+      case "/api/test3":
+        response.writeHead(200, {
+          "Content-Type": "application/json",
+        });
+        console.log("2nd API");
+        response.write(JSON.stringify({ foo: "bar" }));
+        response.end();
+        break;
+
       default:
         response.writeHead(404, {
           "Content-Type": "text/html",
