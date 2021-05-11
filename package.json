@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/DaniAkash/nodejs-git-project#readme",
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   }
 }
